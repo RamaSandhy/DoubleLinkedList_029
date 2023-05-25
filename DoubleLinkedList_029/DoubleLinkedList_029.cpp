@@ -123,5 +123,9 @@ void DoubleLinkedList::descending() {
 		while (currentNode->next != NULL)
 			currentNode = currentNode->next;
 
+		while (currentNode != NULL) {
+			cout << currentNode->noMhs << " " << currentNode->name << endl;
+			currentNode = currentNode->prev;
+		}
 	}
 }
